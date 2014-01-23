@@ -1,0 +1,22 @@
+RandrBrightness
+
+Version: 0.1
+
+
+This is a simple Python script to increase or decrease the brightness of your screen using software.
+
+Why would you want to do this?  Because modern LED backlit LCD displays often use PWM (pulse-width-modulation), or flicker, to control the brightness of the screen.  Many people get a headache from this flickering.  However, most screens have minimal flicker at full brightness.  Therefore, if you want to dim an LED backlit LCD screen without introducing PWM flicker, you can use this script.
+
+The script requires redshift to be installed, as it uses this to set the brightness and gamma.
+
+It takes a single parameter, either 'up' or 'down' to increase or decrease the screen brightness, eg:
+$ randrbrightness.py up
+OR
+$ randrbrightness.py down
+
+In GNOME, you can assign keyboard shortcuts to the above two commands to be able to control your brightness in a similar manner to your laptop's default 'hotkeys'.
+
+
+For more information on LED PWM and how it can create eye-strain, see:
+http://www.tftcentral.co.uk/articles/pulse_width_modulation.htm
+
